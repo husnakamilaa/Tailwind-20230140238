@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Simulasi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 flex items-center justify-center min-h-screen">
+  <div class="bg-gray-800 p-8 rounded shadow-md w-96">
+    <h2 class="text-2xl font-bold text-white mb-6 text-center">Login bisNet</h2>
+    
+    <input id="username" type="text" placeholder="Username" class="w-full p-2 mb-4 rounded bg-gray-700 text-white focus:outline-none">
+    <input id="password" type="password" placeholder="Password" class="w-full p-2 mb-4 rounded bg-gray-700 text-white focus:outline-none">
+
+    <button onclick="login()" class="w-full bg-red-600 hover:bg-red-700 p-2 rounded text-white font-semibold">Login</button>
+    
+    <p id="error" class="text-red-400 mt-4 text-center hidden">Username atau password salah!</p>
+  </div>
+
+  <script>
+    function login() {
+      const user = document.getElementById("username").value;
+      const pass = document.getElementById("password").value;
+
+      // Username dan password yang "diizinkan"
+      const validUser = "admin";
+      const validPass = "1234";
+
+      if (user === validUser && pass === validPass) {
+        alert("Login berhasil!");
+        // Bisa diarahkan ke halaman lain jika mau
+        window.location.href = "index.html";
+      } else {
+        document.getElementById("error").classList.remove("hidden");
+      }
+    }
+  </script>
+</body>
+</html>

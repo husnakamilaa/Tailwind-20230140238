@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>bisNet</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+  .typing {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #fff;
+    animation: typing 4s steps(30, end) infinite alternate, blink .75s step-end infinite;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 69% }
+  }
+
+  @keyframes blink {
+    50% { border-color: transparent }
+  }
+</style>
+</head>
+
+<body class="bg-gray-900 text-white">
+  <!-- buat navbar-->
+  <header class="flex justify-between items-center p-5 bg-gray-800">
+    <h1 class="text-3xl font-bold text-red-500">bisNet</h1>
+    <div class="flex items-center space-x-6">
+    <a href="#footer" class="text-white hover:text-red-400 font-medium">Contact</a>
+    <button onclick="window.location.href='login.html'" class="bg-red-600 px-4 py-2 rounded hover:bg-red-700 text-white font-semibold">Login</button>
+    </div>
+  </header>
+
+  <!-- button ke rekomen filmnya -->
+  <section class="text-center py-16 px-4">
+    <div class="text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4 typing mx-auto">Temukan Film Favoritmu di bisNet</h2>
+    </div>
+    <p class="text-gray-300 mb-6">Jelajahi berbagai genre dan rekomendasi film terbaik versi kami!</p>
+    <button onclick="window.location.href='#rekomendasi-film'" class="bg-red-600 px-6 py-3 rounded-lg text-lg hover:bg-red-700 transition">Lihat Rekomendasi</button>
+  </section>
+
+  <!-- isi dari Rekomendasi Film -->
+  <section id="rekomendasi-film" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6">
+    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+      <img src="foto/family.jpg" alt="Film 1" class="w-full h-64 object-cover" />
+      <div class="p-4">
+        <h3 class="text-xl font-semibold mb-2">1 Kakak 7 Ponakan</h3>
+        <p class="text-gray-400 text-sm">Sebuah komedi keluarga penuh kekacauan dan kasih sayang ketika seorang kakak tiba-tiba harus mengurus tujuh ponakannya yang super aktif.</p>
+      </div>
+    </div>
+
+    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+      <img src="foto/sekawan limo.jpg" alt="Film 2" class="w-full h-64 object-cover" />
+      <div class="p-4">
+        <h3 class="text-xl font-semibold mb-2">Sekawan Limo</h3>
+        <p class="text-gray-400 text-sm">Lima sahabat dari berbagai latar belakang bersatu memecahkan misteri besar di kampung halaman mereka, penuh aksi dan nilai persahabatan.</p>
+      </div>
+    </div>
+
+    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+      <img src="foto/thriller.webp" alt="Film 1" class="w-full h-64 object-cover" />
+      <div class="p-4">
+        <h3 class="text-xl font-semibold mb-2">Bangsal Isolasi</h3>
+        <p class="text-gray-400 text-sm">Ketegangan meningkat saat sekelompok pasien di rumah sakit jiwa mulai mengalami kejadian supernatural yang mengerikan di bangsal isolasi.</p>
+      </div>
+    </div>
+
+    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+      <img src="foto/Jumbo.jpg" alt="Film 2" class="w-full h-64 object-cover" />
+      <div class="p-4">
+        <h3 class="text-xl font-semibold mb-2">Jumbo</h3>
+        <p class="text-gray-400 text-sm">Don, anak yatim piatu 10 tahun, sering diremehkan dan dijuluki Dumbo oleh teman-temannya karena berbadan besar. Demi membuktikan diri, ia bertekad ikut dalam sebuah pertunjukan bakat. Dengan bantuan sesosok peri misterius, petualangannya pun dimulai.</p>
+      </div>
+    </div>
+
+    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+      <img src="foto/horror.jpg" alt="Film 1" class="w-full h-64 object-cover" />
+      <div class="p-4">
+        <h3 class="text-xl font-semibold mb-2">Petaka Gunung Gede</h3>
+        <p class="text-gray-400 text-sm">Pendakian seru berubah menjadi mimpi buruk saat sekelompok pemuda menghadapi teror mistis di lereng Gunung Gede.</p>
+      </div>
+    </div>
+
+    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+      <img src="foto/romence.jpeg" alt="Film 2" class="w-full h-64 object-cover" />
+      <div class="p-4">
+        <h3 class="text-xl font-semibold mb-2">The Architecture of Love</h3>
+        <p class="text-gray-400 text-sm">Seorang arsitek sukses yang kehilangan inspirasi menemukan cinta dan harapan baru di kota yang tak asing namun penuh kenangan.</p>
+      </div>
+    </div>
+
+    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+      <img src="foto/HSL.jpeg" alt="Film 1" class="w-full h-64 object-cover" />
+      <div class="p-4">
+        <h3 class="text-xl font-semibold mb-2">Home Sweet Loan</h3>
+        <p class="text-gray-400 text-sm">Tak sabar untuk keluar dari rumah orangtuanya yang selalu ramai dan sering membuatnya merasa terganggu dan tak nyaman, seorang pekerja kantoran terus berjuang menghadapi berbagai tantangan demi mewujudkan impian untuk dapat membeli rumah sendiri.</p>
+      </div>
+    </div>
+
+    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+      <img src="foto/agak laen.jpg" alt="Film 2" class="w-full h-64 object-cover" />
+      <div class="p-4">
+        <h3 class="text-xl font-semibold mb-2">Agak Laen</h3>
+        <p class="text-gray-400 text-sm"> Menceritakan kisah empat sahabat, Bene, Boris, Jegel, dan Oki, yang mengelola rumah hantu di sebuah pasar malam.</p>
+      </div>
+    </div>
+  </section>
+
+ <!-- buat footernya -->
+  <footer id="footer" class="bg-gray-800 text-center p-4 mt-8">
+    <p class="text-gray-400">Husna Kamila Syahida</p>
+    <a href="mailto:husnakamilasyahd@gmail.com" class="text-gray-400 no-underline hover:text-red-400">husnakamilasyahd@gmail.com</a>
+  </footer>
+</body>
+</html>
